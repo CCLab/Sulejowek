@@ -1,0 +1,240 @@
+.sul-footer {
+    margin-top: rem( 22 );
+    @media ( min-width: $large ) {
+        .sul-term-header.footer + & {
+            margin-top: rem( -105 + 22 );
+            position: relative;
+            z-index: 0;
+            .container::before {
+                content: none;
+            }
+        }        
+    }
+}
+
+.sul-contactus {
+    margin-bottom: rem( 32 );
+    .container {
+        padding-top: rem( 10 );
+        position: relative;
+        &::before {
+            @include szlaczek();
+            bottom: auto;
+            top: 0;
+        }        
+    }
+    .left, .right {
+        margin-top: rem( 20 );
+        @media ( max-width: $large - 1 ) {
+            h3 {
+                margin-top: 0;
+            }
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+    @media ( min-width: $large ) {
+        margin-bottom: rem( 100 );
+        .container {
+            &::before {
+                transform: none;
+            }
+        }
+        .left, .right {
+            margin-top: rem( 94 );
+            > .wrapper {
+                padding: 0 rem( 45 );
+            }
+        }
+        p:first-of-type {
+            margin-top: 0;
+        }
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+.sul-text-columns {
+    .container {
+        padding-top: 0;
+        &::before {
+            content: none;
+        }
+    }
+    .left, .right {
+        margin-top: 0;
+    }
+    @media ( min-width: $large ) {
+        .left, .right {
+            margin-top: 0;
+        }
+    }
+}
+
+.sul-newsletter {
+    fieldset {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        display: block;
+        background-color: $alert;
+    }
+    .wrapper {
+        display: flex;
+        button {
+            width: rem( 55 );
+        }
+        .email {
+            flex-grow: 1;
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+        button, input[type="email"] {
+            height: rem( 35 );
+            padding: rem( 7 );
+            box-sizing: border-box;
+            color: $type;
+            font-family: $sansserif;
+            font-size: inherit;
+        }
+        input {
+            font-weight: normal;
+        }
+        button {
+            font-weight: bold;
+        }
+    }
+    .sending {
+        opacity: .3;
+        pointer-events: none;
+    }
+    @media ( min-width: $large ) {
+        margin-top: rem( 40 );
+        .wrapper {
+            button {
+                width: rem( 80 );
+            }
+            button, input[type="email"] {
+                height: rem( 50 );
+            }
+            input[type="email"] {
+                padding: rem( 10 ) rem( 20 );
+            }
+        }
+    }
+}
+
+.sul-logotypy {
+    .logo {
+        padding-top: rem( 25 );
+        padding-bottom: rem( 25 );
+    }
+    .img {
+        height: rem( 87 );
+        margin-bottom: rem( 30 );
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+    }
+    p:first-of-type {
+        margin-top: 0;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+    .title {
+        padding-top: rem( 28 );
+        border-top: rem( 3 ) solid $kreska;
+        margin: 0 0 rem( 15 ) 0;
+    }
+    @media ( min-width: $large ) {
+        margin-bottom: rem( 100 );
+        .logo {
+            padding-top: rem( 30 );
+            padding-bottom: rem( 30 );
+        }
+        .img {
+            height: rem( 146 );
+            margin-bottom: rem( 50 );
+        }
+        .title {
+            padding-top: rem( 95 );
+            border-top: rem( 6 ) solid $kreska;
+            margin-bottom: rem( 84 );
+        }
+    }
+}
+
+/* Typography */
+.sul-footer {
+    font-size: rem( 14 );
+    line-height: ( 23 / 14 );
+    letter-spacing: ( .2 / 14 * 1em );
+    font-weight: normal;
+    a {
+        color: $typealt;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            color: $alert;
+        }
+    }
+    .title {
+        font-size: rem( 20 );
+        line-height: ( 24 / 20 );
+        letter-spacing: ( 1 / 20 * 1em );
+        font-weight: bold;
+        font-family: $gilroy;
+    }
+    .sul-text-columns {
+        //font-size: rem( 10 );
+        &.mkidn {
+            .right {
+                text-align: left;                
+            }
+            .img {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media ( min-width: $large ) {
+        font-size: rem( 20 );
+        line-height: ( 33 / 20 );
+        letter-spacing: ( .6 / 20 * 1em );
+        .title {
+            font-size: rem( 40 );
+            line-height: ( 49 / 40 );
+            letter-spacing: ( 2 / 40 * 1em );
+        }
+        .sul-text-columns {
+            //font-size: rem( 14 );
+        }
+    }
+}
+
+.sul-logotypy {
+    text-align: center;
+    a {
+        color: inherit;
+        font-weight: initial;
+    }
+}
+
+.sul-newsletter {
+    color: $alert;
+    font-size: rem( 13 );
+    line-height: ( 21 / 13 );
+    strong, input {
+        font-weight: normal;
+    }
+    @media ( min-width: $large ) {
+        font-size: rem( 20 );
+        line-height: ( 26 / 20 );
+        letter-spacing: rem( .6 );
+    }
+}

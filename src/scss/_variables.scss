@@ -1,0 +1,33 @@
+$type: #000;
+$background: #ffffff;
+$typealt: #307db0;
+$alert: #ff7676;
+$backgroundalt: #efefef;
+$kreska: #eeeeee;
+
+// Breakpoints
+// -------------------------
+
+$small: 320px;
+$medium: 768px;
+$large: 1024px;
+$largemax: 1440px !default;
+
+$content: 1338px;
+$contentmedium: 688px;
+$contentsmall: 320px;
+
+$menureveal: .3s;
+$menuheight: 150px;
+$menuheightsmall: 60px;
+
+
+$serif: 'TT Norms Pro', serif;
+$sansserif: 'TT Norms Pro', serif;
+$gilroy: 'Gilroy', sans-serif;
+
+:root {
+  --type: #{$type};
+  --background: #{$background};
+  --type_alt: #{$typealt};
+}

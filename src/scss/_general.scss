@@ -1,0 +1,117 @@
+html, body {
+	padding: 0;
+	margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $background;
+    color: $type;
+}
+#main {
+    padding-top: rem( $menuheightsmall );
+    @media ( min-width: $large ) {
+        padding-top: rem( $menuheight );
+    }
+}
+.vertically-centered-tab {
+  @include vertically-centered-tab();
+}
+.screen-reader-text {
+    position: fixed;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: rem(32);
+    background-color: #fff;
+    color: #000;
+    z-index: 100000;
+    visibility: hidden;
+}
+a:focus .screen-reader-text {
+	visibility: initial;
+	transform: translate(-50%, 100%);
+}
+a {
+    transition: color .2s ease-in;
+    color: inherit;
+    &:hover {
+        color: $alert;
+    }
+}
+
+use {
+    color: $typealt;
+    fill: currentColor;
+    transition: color .2s ease-in;
+}
+
+a, [role="button"] {
+    /*img[src*=".svg"], &::after {
+        transition: opacity .3s ease-in;
+    }*/
+    &:hover {
+        use {
+            color: $alert;            
+        }
+        /*img[src*=".svg"], &::after {
+            opacity: .4;
+        }*/
+    }
+}
+
+
+mark {
+    background-color: #ffd64e;
+}
+
+.visibly-hidden {
+    @include visibly-hidden();
+}
+.clearfix {
+    @include clear();
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+figure {
+	margin: 0;
+}
+.loading {
+	pointer-events: none;
+	position: relative;
+	&::before {
+		z-index: 2;
+		content: '';
+		border: .2em solid currentColor;
+		border-top: .2em solid $type;
+		border-radius: 50%;
+		width: 50%;
+		height: 50%;
+        box-sizing: border-box;
+		animation: spin 2s linear infinite;
+		position: absolute;
+		top: 25%;
+		left: 25%;
+	}
+}
+.unbutton {
+    background: none;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    display: block;
+    padding: 0;
+    color: inherit;
+    cursor: pointer;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

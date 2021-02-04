@@ -1,0 +1,355 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zakopane Słońce\n"
+"POT-Creation-Date: 2020-07-28 03:54+0200\n"
+"PO-Revision-Date: 2020-07-28 03:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _;__;_e;_x;_n:1,2;_n_noop:1,2;_nx:1,2;_nx_noop:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: footer.php:6
+msgid "Włącz dźwięk"
+msgstr "Play"
+
+#: functions/posts.php:15
+msgid "Artykuły"
+msgstr "Articles"
+
+#: functions/posts.php:16
+msgid "Artykuł"
+msgstr "Article"
+
+#: functions/posts.php:114
+msgid "BIBLIOGRAFIA / ŹRÓDŁA"
+msgstr "BIBLIOGRAPHY / SOURCES"
+
+#: functions/posts.php:120
+msgid "Bibliografia / Źródła"
+msgstr "Bibliography / Sources"
+
+#: functions/settings.php:104
+msgid "Jasny"
+msgstr ""
+
+#: functions/settings.php:109
+msgid "Ciemny"
+msgstr ""
+
+#: functions/settings.php:150
+msgid "Menu główne"
+msgstr "Main menu"
+
+#: functions/settings.php:151
+msgid "Stopka"
+msgstr "Footer"
+
+#: functions/settings.php:168
+msgid "« Previous"
+msgstr ""
+
+#: functions/settings.php:169
+msgid "Next »"
+msgstr ""
+
+#: functions/settings.php:263
+msgid "About Us page"
+msgstr "Strona O nas"
+
+#: functions/settings.php:294
+msgid "— Select —"
+msgstr ""
+
+#: functions/settings.php:318
+msgid "About Us"
+msgstr "O nas"
+
+#: functions/story.php:9 functions/story.php:11 functions/story.php:13
+msgid "Opowieść"
+msgstr "Story"
+
+#: functions/story.php:12 functions/story.php:14 functions/story.php:533
+#: parts/progressbar-chapter.php:14
+msgid "Rozdział"
+msgstr "Chapter"
+
+#: functions/story.php:214
+msgid "Element {#}"
+msgstr ""
+
+#: functions/story.php:215
+msgid "Add Another Entry"
+msgstr ""
+
+#: functions/story.php:216
+msgid "Remove Entry"
+msgstr ""
+
+#: header.php:24
+msgid "Przejdź do treści"
+msgstr "Skip to content"
+
+#: header.php:36 parts/front-page.php:32
+msgid "Spis treści"
+msgstr "Table of Contents"
+
+#: index.php:35
+msgid "Powróć do góry strony"
+msgstr "Back to top"
+
+#: parts/story-player-tml.php:5
+msgid "Włącz"
+msgstr "Start"
+
+#, fuzzy
+#~| msgid "Partnerzy"
+#~ msgid "Partnerzy i patroni"
+#~ msgstr "Partners"
+
+#~ msgid "Kraków"
+#~ msgstr "Cracow"
+
+#~ msgid "Lista Wykonawców"
+#~ msgstr "List of artists"
+
+#~ msgid "Najbliższy koncert"
+#~ msgstr "Next concert"
+
+#~ msgid "Kup bilet"
+#~ msgstr "Buy ticket"
+
+#~ msgid "Light green"
+#~ msgstr "Light green"
+
+#~ msgid "Przełącz język strony na"
+#~ msgstr "Switch language to"
+
+#~ msgid "Aktualności"
+#~ msgstr "News"
+
+#~ msgid "Artyści"
+#~ msgstr "Artists"
+
+#~ msgid "Artysta"
+#~ msgstr "Artist"
+
+#~ msgid "Wydarzenia"
+#~ msgstr "Events"
+
+#~ msgid "Wydarzenie"
+#~ msgstr "Event"
+
+#~ msgid "Miejsca"
+#~ msgstr "Locations"
+
+#~ msgid "Miejsce"
+#~ msgstr "Location"
+
+#~ msgid "Data {#}"
+#~ msgstr "Date {#}"
+
+#, fuzzy
+#~| msgid "Partnerzy"
+#~ msgid "Partner {#}"
+#~ msgstr "Partners"
+
+#~ msgid "Przejdź do nawigacji"
+#~ msgstr "Skip to navigation"
+
+#~ msgid "Zobacz galerię"
+#~ msgstr "See gallery"
+
+#~ msgid "Program Green Zoo Festival"
+#~ msgstr "Green Zoo Festival Schedule"
+
+#~ msgid "Kiedy"
+#~ msgstr "When"
+
+#~ msgid "Godzina"
+#~ msgstr "Hour"
+
+#~ msgid "Gdzie"
+#~ msgstr "Where"
+
+#~ msgid "Kto"
+#~ msgstr "Who"
+
+#~ msgid "Bilety"
+#~ msgstr "Tickets"
+
+#~ msgid "Current events"
+#~ msgstr "Current events"
+
+#~ msgid "Past events"
+#~ msgstr "Past events"
+
+#~ msgid "Recent activity"
+#~ msgstr "Recent activity"
+
+#~ msgid "Finansowanie"
+#~ msgstr "Funding"
+
+#~ msgid "Blue"
+#~ msgstr "Blue"
+
+#~ msgid "Navy blue"
+#~ msgstr "Navy blue"
+
+#~ msgid "Gray"
+#~ msgstr "Gray"
+
+#~ msgid "Baza wiedzy"
+#~ msgstr "Knowledge Base"
+
+#~ msgid "Language"
+#~ msgstr "Language"
+
+#~ msgid "Kraje"
+#~ msgstr "Countries"
+
+#~ msgid "Kraj"
+#~ msgstr "Country"
+
+#~ msgid "Obszary"
+#~ msgstr "Themes"
+
+#~ msgid "Obszar"
+#~ msgstr "Theme"
+
+#~ msgid "Powiązane kraje"
+#~ msgstr "Related countries"
+
+#~ msgid "White"
+#~ msgstr "White"
+
+#~ msgid "Opis projektu"
+#~ msgstr "Project description"
+
+#~ msgid "Przebieg zajęć"
+#~ msgstr "Course"
+
+#~ msgid "autor"
+#~ msgstr "author"
+
+#~ msgid "opiekun"
+#~ msgstr "supervisor"
+
+#~ msgid "lokalizacja"
+#~ msgstr "location"
+
+#~ msgid "Dokumenty do pobrania"
+#~ msgstr "Download files"
+
+#~ msgid "Kontakt"
+#~ msgstr "Contact"
+
+#~ msgid "Powiązane projekty"
+#~ msgstr "Related projects"
+
+#~ msgid "Powiązane zagadnienia"
+#~ msgstr "Related subjects"
+
+#~ msgid "Hasła z glosariusza"
+#~ msgstr "Glossary terms"
+
+#~ msgid "zobacz jeszcze %s projekt"
+#~ msgid_plural "zobacz jeszcze %s projektów"
+#~ msgstr[0] "see 1 more project"
+#~ msgstr[1] "see %s more projects"
+
+#~ msgid "zobacz jeszcze %s artykuł"
+#~ msgid_plural "zobacz jeszcze %s artykułów"
+#~ msgstr[0] "see 1 more article"
+#~ msgstr[1] "see %s more articles"
+
+#~ msgid "Dokumenty"
+#~ msgstr "Documents"
+
+#~ msgid "zobacz jeszcze %s dokument"
+#~ msgid_plural "zobacz jeszcze %s dokumenty"
+#~ msgstr[0] "see 1 more document"
+#~ msgstr[1] "see %s more documents"
+
+#~ msgid "Fundacja „Pamięć, Odpowiedzialność i Przyszłość”"
+#~ msgstr "Federal Foundation \"Memory, Responsibility and Future\""
+
+#~ msgid "Dofinansowano ze środków Muzeum Historii Polski w Warszawie w ramach Programu „Patriotyzm Jutra”."
+#~ msgstr "Co-financed by the Polish History Museum in Warsaw as part of the \"Patriotism of Tomorrow\" Program."
+
+#~ msgid "Dom Spotkań z Historią"
+#~ msgstr "History Meeting House"
+
+#~ msgid "Lernen aus der Geschichte"
+#~ msgstr "Learning from History"
+
+#~ msgid "Prowadzenie"
+#~ msgstr "Management"
+
+#~ msgid "Serwis zrealizowany w ramach %sPracowni Otwierania Kultury%s"
+#~ msgstr "Portal created as part of %sOpen Culture Studio%s"
+
+#~ msgid "wyróżnione zagadnienia"
+#~ msgstr "featured subjects"
+
+#~ msgid "Zobacz wszystkie zagadnienia"
+#~ msgstr "See all subjects"
+
+#~ msgid "polecane"
+#~ msgstr "recommended"
+
+#~ msgid "Aktualność"
+#~ msgstr "News article"
+
+#~ msgid "Projekty"
+#~ msgstr "Projects"
+
+#~ msgid "Projekt"
+#~ msgstr "Project"
+
+#~ msgid "Konkursy"
+#~ msgstr "Contests"
+
+#~ msgid "Konkurs"
+#~ msgstr "Contest"
+
+#~ msgid "Lokalizacje"
+#~ msgstr "Locations"
+
+#~ msgid "Lokalizacja"
+#~ msgstr "Location"
+
+#~ msgid "Zagadnienia"
+#~ msgstr "Subjects"
+
+#~ msgid "Zagadnienie"
+#~ msgstr "Subject"
+
+#~ msgid "Glosariusz"
+#~ msgstr "Glossary"
+
+#~ msgid "Termin"
+#~ msgstr "Term"
+
+#~ msgid "Wyniki wyszukiwania dla: %s"
+#~ msgstr "Search results for: %s"
+
+#~ msgid "Nic nie znaleziono"
+#~ msgstr "Nothing found"
+
+#~ msgid "Rok"
+#~ msgstr "Year"
+
+#~ msgid "Archiwalne konkursy"
+#~ msgstr "Archived contests"
+
+#~ msgid "author"
+#~ msgstr "author"

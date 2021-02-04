@@ -1,0 +1,106 @@
+.sul-term-header.biuletyn {
+    margin-bottom: rem( 13 );
+    @media ( max-width: $large - 1 ) {
+        h1 {
+            margin: 0;
+        }
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.sul-archive.biuletyn {
+
+    .item.intro {
+        .content {
+            > *:first-child {
+                margin-top: 0;
+            }
+            > *:last-child {
+                margin-bottom: rem( 13 );
+            }
+        }
+    }
+    
+    .sul-archive-main {
+
+        h2 {
+            color: $typealt;
+            margin: rem( 30 ) 0 rem( 13 );
+            + * {
+                margin-top: rem( 13 );
+            }
+        }
+        .terms.date {
+            color: $typealt;
+        }
+        
+        
+        @media ( min-width: $large ) {
+            .item {
+                display: block;
+                .wrapper {
+                    width: 100%;
+                }
+                .terms {
+                    text-align: left;
+                    margin-bottom: rem( 10 );
+                }
+                .terms, .content {
+                    padding: 0;
+                    width: 100%;
+                }
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: rem( 38 );
+                }
+            }
+        }
+
+    }
+
+
+    .item + .item {
+        margin: rem( 30 ) 0;
+        @media ( min-width: $large ) {
+            margin: rem( 50 ) 0;
+        }
+    }
+    
+    .sul-sidebar {
+        padding-bottom: rem( 30 );
+        @media ( max-width: $large - 1 ) {
+            &::after {
+                content: none;
+            }            
+        }
+        @media ( min-width: $large ) {
+            padding-bottom: rem( 90 + 30 );
+            h2 {
+                margin-top: rem( 2 );
+            }
+        }
+    }
+    
+    @media ( min-width: $large ) {
+        
+    }
+    
+}
+
+/* Typography */
+.biuletyn {
+    .sul-archive-main {
+        h2 {
+            font-family: $gilroy;
+        }
+        @media ( min-width: $large ) {
+            h2 {
+                font-size: rem( 40 );
+                line-height: ( 48 / 40 );
+                letter-spacing: ( 2 / 40 * 1em );
+            }
+        }
+    }
+}

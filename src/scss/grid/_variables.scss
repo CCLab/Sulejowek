@@ -1,0 +1,44 @@
+// --------------------------------------------------
+// reflex variables
+// --------------------------------------------------
+
+// Prefix
+// -------------------------
+// You can optionally namespace reflex classes to avoid clashing with other css frameworks
+// e.g. setting $reflex-prefix as "reflex-" here would cause col-sm-6 to become reflex-col-sm-6
+// Example: $reflex-prefix: reflex-;
+// By default this is an empty string
+$reflex-prefix: null !default;
+
+
+// Legacy support
+// -------------------------
+// Reflex adds a lot of css propertie to support older browsers that don't support flexbox layout.
+// If you prefer to use this as a purely flexbox grid without legacy support then set this to false
+$legacy-support: true !default;
+
+// Responsive visibility helpers
+// -------------------------
+// Reflex has some generic visibility classes to hide elements at different breakpoints.
+// If you want to disable these then set this to false
+$visibility-helpers: true !default;
+
+// Grid
+// -------------------------
+$reflex-columns: 12 !default; // number of columns
+
+// Breakpoints
+// -------------------------
+$reflex-sm: 300px !default;
+$reflex-md: $medium;
+$reflex-lg: $large;
+
+$reflex-xs-max: ($reflex-sm - 1);
+$reflex-sm-max: ($reflex-md - 1);
+$reflex-md-max: ($reflex-lg - 1);
+
+// Spacing
+// -------------------------
+$reflex-grid-spacing-sm: 5px !default;
+$reflex-grid-spacing-md: 15px !default;
+$reflex-grid-spacing-lg: 15px !default;

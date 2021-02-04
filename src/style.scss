@@ -1,0 +1,34 @@
+/*
+Theme Name: Sulejówek
+*/
+
+
+/* Main Settings */
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+/* Grid */
+
+@import 'src/scss/grid/variables';
+@import 'src/scss/grid/mixins';
+@import 'src/scss/grid/helpers';
+@import 'src/scss/grid/grid';
+
+
+/* Ogólne */
+
+@import 'src/scss/normalize';
+@import 'src/scss/general';
+@import 'src/scss/typography';
+
+
+/* Components */
+@import 'src/scss/components/swiper';
+@import 'src/scss/components/menu';
+@import 'src/scss/components/footer';
+
+/* Strony */
+@import 'src/scss/pages/front';
+@import 'src/scss/pages/post';
+@import 'src/scss/pages/archive';
+@import 'src/scss/pages/page';

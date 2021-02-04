@@ -1,0 +1,47 @@
+/*
+Theme Name: Guliwer
+*/
+
+@import 'src/scss/mixins';
+
+/**
+ * Grid
+**/
+
+@import 'src/scss/grid/variables';
+@import 'src/scss/grid/mixins';
+@import 'src/scss/grid/grid';
+@import 'src/scss/grid/helpers';
+
+/**
+ * Normalize
+**/
+
+@import "src/scss/normalize";
+
+
+/**
+ * Typography
+ */
+@import "src/scss/typography";
+
+@import 'src/scss/general';
+
+/**
+ * Pages
+*/
+
+@import 'src/scss/pages/archive-projects';
+@import 'src/scss/pages/project';
+@import 'src/scss/pages/page';
+@import 'src/scss/pages/profile';
+@import 'src/scss/pages/form';
+@import 'src/scss/pages/front';
+
+/**
+ * Components
+*/
+
+@import 'src/scss/components/menu';
+@import 'src/scss/components/footer';
+
