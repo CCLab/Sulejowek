@@ -57,7 +57,7 @@ function sul_usun_z_naglowka () {
 add_action('wp_enqueue_scripts', 'sul_scripts', 50);
 function sul_scripts() {
 
-    wp_register_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', array(), '6.0.4', true);
+    wp_register_script( 'swiper', get_template_directory_uri() . '/dependencies/swiper-bundle.min.js', array(), null, true);
     wp_enqueue_script( 'swiper' );
 
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.min.js', null, '0.0.63', true);
@@ -68,6 +68,9 @@ function sul_scripts() {
 
 add_action('wp_enqueue_scripts', 'sul_styles', 1000);
 function sul_styles() {
+
+    wp_register_style('normalize', get_template_directory_uri() . '/dependencies/normalize.css', array(), null, null);
+	wp_enqueue_style('normalize');
 
 	wp_register_style('style', get_template_directory_uri() . '/style.min.css', array(), '1.0.12', null);
 	wp_enqueue_style('style');

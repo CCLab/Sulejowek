@@ -5,16 +5,18 @@
   "author": "Łukasz Grochowski (http://lukaszgrochowski.com/)",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/CCLab/Sulejowek"
   },
+  "license": "",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/register": "^7.10.5",
     "beepbeep": "^1.3.0",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.14",
     "eslint": "^5.16.0",
     "eslint-config-wordpress": "^2.0.0",
+    "frontend-dependencies": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -46,10 +48,27 @@
     "customJS": "gulp customJS",
     "images": "gulp images",
     "clearCache": "gulp clearCache",
-    "translate": "gulp translate"
+    "translate": "gulp translate",
+    "postinstall": "node ./node_modules/frontend-dependencies/index.js"
   },
   "dependencies": {
     "browserlist": "^1.0.1",
     "caniuse-lite": "^1.0.30001107"
+  },
+  "frontendDependencies": {
+    "target": "dependencies/",
+    "packages": {
+      "normalize.css": {
+        "src": "normalize.css"
+      },
+      "swiper": {
+        "version": "6.5.6",
+        "src": "{swiper-bundle.min.css,swiper-bundle.min.js}"
+      },
+      "leaflet": {
+        "version": "1.7.1",
+        "src": "{dist/leaflet.css,dist/leaflet.js}"
+      }
+    }
   }
 }
