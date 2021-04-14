@@ -457,9 +457,8 @@ add_action( 'pre_get_posts', 'sul_relacja_query' );
 
 
 /* Następny / poprzedni term w taksonomii */
-function get_adjacent_term( $slug, $taxonomy, $type ){
-    
-	/*
+function get_adjacent_term( $slug, $taxonomy, $type, $term = false ){
+
 	global $wpdb;
     $p = $wpdb->prefix;
 
@@ -470,16 +469,26 @@ function get_adjacent_term( $slug, $taxonomy, $type ){
         $operator="<";
         $orderby=" ORDER BY tt.`term_id` DESC ";
     }
-    $query="SELECT *,(SELECT `term_id` FROM {$p}terms WHERE `slug`='$slug') AS given_term_id,
+
+   
+	if( !$term ) { /* Już nie potrzebne prawdopodobnie */
+		$query="SELECT *,(SELECT `term_id` FROM {$p}terms WHERE `slug`='$slug' AND taxonomy='$taxonomy') AS given_term_id,
         (SELECT parent FROM {$p}term_taxonomy WHERE `term_id`=given_term_id) AS parent_id
         FROM  `{$p}terms` t
         INNER JOIN `{$p}term_taxonomy` tt ON (`t`.`term_id` = `tt`.`term_id`)
         HAVING  tt.taxonomy='$taxonomy' AND tt.`parent` = parent_id AND tt.`term_id` $operator given_term_id $orderby LIMIT 1";
-    
+		$term_id = $term->term_id;
+	} else {
+		$query="SELECT *
+        FROM  `{$p}terms` t
+        INNER JOIN `{$p}term_taxonomy` tt ON (`t`.`term_id` = `tt`.`term_id`)
+        HAVING  tt.taxonomy='$taxonomy' AND tt.`parent` = {$term->parent} AND tt.`term_id` $operator '{$term->term_id}' $orderby LIMIT 1";
+	}
+
     $term = $wpdb->get_row($query);
-	*/
+	
     
-    if( !isset( $term ) || !$term ) :
+    if( !$term ) :
         $term = get_terms(
             array(
                 'taxonomy' => $taxonomy,

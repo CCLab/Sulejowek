@@ -6,8 +6,8 @@
     <?php
     
 		$term = get_queried_object();
-        $next = get_adjacent_term( $term->slug, $term->taxonomy, "next" );
-        $prev = get_adjacent_term( $term->slug, $term->taxonomy ,"previous" );
+        $next = get_adjacent_term( $term->slug, $term->taxonomy, "next", $term );
+        $prev = get_adjacent_term( $term->slug, $term->taxonomy ,"previous", $term );
 
     ?>
         <div class="col-12 col-lg-6 offset-lg-3">
